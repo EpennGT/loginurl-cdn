@@ -21,6 +21,9 @@ require(path.join(__dirname, 'routes', 'Index.js'))(app);
 require(path.join(__dirname, 'routes', 'GrowtopiaGame.js'))(app);
 require(path.join(__dirname, 'routes', 'GrowtopiaWebview.js'))(app);
 
+//importing file
+require(path.join(__dirname, 'public', 'base.css'))(app);
+
 // 404 route
 app.use((req, res) => {
     console.log(`[${new Date().toLocaleString()}] Missing file: ${req.url} [${req.method}] - ${res.statusCode}`);
