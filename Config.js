@@ -5,6 +5,6 @@ module.exports = {
         ip: "159.65.140.105",    // your enet host
         port: "17091",  // your enet port
         meta: "localhost",
-        loginurl: ""   // login dashboard
+        loginurl: "europe.gtpsnet.xyz"   // login dashboard
     }
 };
