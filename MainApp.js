@@ -22,7 +22,7 @@ require(path.join(__dirname, 'routes', 'GrowtopiaGame.js'))(app);
 require(path.join(__dirname, 'routes', 'GrowtopiaWebview.js'))(app);
 
 //importing file
-require(path.join(__dirname, 'public', 'base.css'))(app);
+app.use(express.static(path.join(__dirname, 'public')));
 
 // 404 route
 app.use((req, res) => {
